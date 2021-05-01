@@ -34,7 +34,8 @@ try:
 except Exception as e:
     print(e)
 
-cv2.imshow("FACE", s_face)
+cv2.imshow("FACE", img)
+cv2.imshow("img pos for emb", s_face)
 cv2.waitKey()
 
 cv2.destroyAllWindows()
