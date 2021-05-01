@@ -9,7 +9,7 @@ from FastMTCNN import FastMTCNN
 
 device = 'cuda:0' if torch.cuda.is_available() else 'cpu'
 
-FastVersion = True
+FastVersion = True 
 mtcnn = FastMTCNN(stride=4, resize=1, margin=14, factor=0.6, keep_all=True, device=device) if FastVersion else MTCNN(device=device)
 print("MTCNN : {}".format("FastMTCNN" if FastVersion else "MTCNN"))
 
